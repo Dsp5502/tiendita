@@ -234,6 +234,184 @@ header .container-ubicacion button .Ncarrito {
   color: #fefefe;
 }
 
+.container-Ofertas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px;
+  position: static;
+  max-width: 1286px;
+  height: 560px;
+  left: 40px;
+  top: 330px;
+  /* White */
+  background: #fefefe;
+  /* Shadows-2 */
+  -webkit-box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.container-Ofertas h5 {
+  position: static;
+  width: 76px;
+  height: 22px;
+  left: 40px;
+  top: 40px;
+  /* Headline 3 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.container-Ofertas .productsOfer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 1162px;
+  height: 418px;
+  left: 40px;
+  top: 102px;
+}
+
+.container-Ofertas .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 194px;
+  height: 418px;
+  left: 0px;
+  top: 0px;
+}
+
+.container-Ofertas .card .dto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 4px;
+  position: static;
+  width: 59px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  /* Purple-bg */
+  background: #e8d2ff;
+  border-radius: 16px;
+}
+
+.container-Ofertas .card img {
+  position: static;
+  width: 194px;
+  height: 194px;
+  left: 0px;
+  top: 40px;
+  /* White */
+  background: #fefefe;
+}
+
+.container-Ofertas .card .descripCard {
+  position: static;
+  width: 194px;
+  height: 112px;
+  left: 0px;
+  top: 250px;
+}
+
+.container-Ofertas .card .descripCard .precio {
+  position: static;
+  width: 194px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  /* Body 1/Bold */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Cocoa Brown */
+  color: #332927;
+}
+
+.container-Ofertas .card .descripCard .descripcion {
+  position: static;
+  width: 194px;
+  height: 72px;
+  left: 0px;
+  top: 32px;
+  /* Body 2/Regular */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  /* Cocoa Brown */
+  color: #332927;
+}
+
+.container-Ofertas .card button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px;
+  position: static;
+  width: 194px;
+  height: 40px;
+  left: 0px;
+  top: 378px;
+  color: white;
+  /* Malachite */
+  background: #0ac763;
+  border-radius: 8px;
+}
+
 @media screen and (max-width: 650px) {
   header {
     display: -webkit-box;

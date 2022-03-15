@@ -1,3 +1,5 @@
+@import './modal.scss';
+
 html {
   box-sizing: border-box;
   /* 1rem igual a 10px*/
@@ -23,6 +25,10 @@ body {
 img {
   max-width: 100%;
   display: block;
+}
+
+.msection {
+  margin: 40px 0;
 }
 
 /* centrar un contendor*/
@@ -122,6 +128,7 @@ header {
       height: 24px;
       left: 32px;
       top: 0px;
+      cursor: pointer;
 
       /* Body 1/Bold */
 
@@ -261,7 +268,7 @@ header {
     height: 418px;
     left: 40px;
     top: 102px;
-    // overflow-x: scroll;
+    overflow-x: scroll;
   }
 
   .card {
@@ -269,7 +276,7 @@ header {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-
+    margin: 0 20px;
     position: static;
     width: 194px;
     height: 418px;

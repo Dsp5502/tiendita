@@ -1,0 +1,175 @@
+.modalContainer {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContainer .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  width: 703px;
+  height: 354px;
+  left: 331px;
+  top: 80px;
+}
+
+.modalContainer .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contentUbicacion {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 623px;
+  height: 274px;
+  left: 40px;
+  top: 40px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.textModal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 623px;
+  height: 82px;
+  left: 0px;
+  top: 64px;
+}
+
+.tituloModal {
+  position: static;
+  width: 623px;
+  height: 42px;
+  left: 0px;
+  top: 0px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin: 50px 0 0 0;
+  color: #332927;
+}
+
+.pModal {
+  position: static;
+  width: 623px;
+  height: 24px;
+  left: 0px;
+  top: 58px;
+
+  /* Body 1/Regular */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  /* Cocoa Brown */
+
+  color: #332927;
+}
+
+.contentInput {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 623px;
+  height: 104px;
+  left: 0px;
+  top: 170px;
+}
+
+.inputLocation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  outline: none;
+  position: static;
+  width: 623px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+
+  /* Boulder */
+
+  border: 1px solid #b8b4b4;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+
+.btnLocation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+
+  position: static;
+  width: 623px;
+  height: 40px;
+  left: 0px;
+  top: 8px;
+
+  /* Malachite */
+
+  background: #0ac763;
+  border-radius: 8px;
+  color: white;
+}
+
+.cerrar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 8px;
+
+  position: static;
+}

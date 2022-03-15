@@ -23,7 +23,9 @@
       <div class="tienditatitle">Tiendita</div>
       <div class="container-ubicacion">
         <img class="iconlocation" src="img/Icons.png" alt="" />
-        <div class="location">México City Marriot Reforma Hotel...</div>
+        <div class="location" id="btnModal">
+          México City Marriot Reforma Hotel...
+        </div>
         <div class="linea"></div>
 
         <button>
@@ -48,6 +50,7 @@
       <section class="container-Ofertas">
         <h5>Ofertas</h5>
         <div class="productsOfer">
+          <!-- -------          ------------- -->
           <div class="card">
             <h6 class="dto">32% dto</h6>
             <img src="img/limon.png" alt="" />
@@ -57,12 +60,148 @@
             </div>
             <button>agregar</button>
           </div>
+          <!-- -------          ------------- -->
+          <!-- -------          ------------- -->
+          <div class="card">
+            <h6 class="dto">32% dto</h6>
+            <img src="img/Tomate.png" alt="" />
+            <div class="descripCard">
+              <p class="precio">$26.82/kg $39.9/kg</p>
+              <p class="descripcion">Limon con semilla</p>
+            </div>
+            <button>agregar</button>
+          </div>
+          <!-- -------          ------------- -->
+          <!-- -------          ------------- -->
+          <div class="card">
+            <h6 class="dto">32% dto</h6>
+            <img src="img/aguacate.png" alt="" />
+            <div class="descripCard">
+              <p class="precio">$26.82/kg $39.9/kg</p>
+              <p class="descripcion">Limon con semilla</p>
+            </div>
+            <button>agregar</button>
+          </div>
+          <!-- -------          ------------- -->
+          <!-- -------          ------------- -->
+          <div class="card">
+            <h6 class="dto">32% dto</h6>
+            <img src="img/napal.png" alt="" />
+            <div class="descripCard">
+              <p class="precio">$26.82/kg $39.9/kg</p>
+              <p class="descripcion">Limon con semilla</p>
+            </div>
+            <button>agregar</button>
+          </div>
+          <!-- -------          ------------- -->
+          <!-- -------          ------------- -->
+          <div class="card">
+            <h6 class="dto">32% dto</h6>
+            <img src="img/tomateVerde.png" alt="" />
+            <div class="descripCard">
+              <p class="precio">$26.82/kg $39.9/kg</p>
+              <p class="descripcion">Limon con semilla</p>
+            </div>
+            <button>agregar</button>
+          </div>
+          <!-- -------          ------------- -->
         </div>
       </section>
       <!-- ------- FIN OFERTAS------------- -->
+      <!-- -------             ------------- -->
+      <!-- ------- LOS  MAS POPULARES------------- -->
+      <section class="container-Ofertas msection">
+        <h5>Los más populares</h5>
+        <div class="productsOfer">
+          <!-- -------          ------------- -->
+          <div class="card">
+            <h6 class="dto">32% dto</h6>
+            <img src="img/PechugaPavo.png" alt="" />
+            <div class="descripCard">
+              <p class="precio">$62.5</p>
+              <p class="descripcion">Limon con semilla</p>
+            </div>
+            <button>agregar</button>
+          </div>
+          <!-- -------          ------------- -->
+          <!-- -------          ------------- -->
+          <div class="card">
+            <h6 class="dto">32% dto</h6>
+            <img src="img/panBimbo.png" alt="" />
+            <div class="descripCard">
+              <p class="precio">$26.82/kg $39.9/kg</p>
+              <p class="descripcion">San Rafael pechuga de pavo</p>
+            </div>
+            <button>agregar</button>
+          </div>
+          <!-- -------          ------------- -->
+          <!-- -------          ------------- -->
+          <div class="card">
+            <h6 class="dto">32% dto</h6>
+            <img src="img/mayonesa.png" alt="" />
+            <div class="descripCard">
+              <p class="precio">$26.82/kg $39.9/kg</p>
+              <p class="descripcion">Limon con semilla</p>
+            </div>
+            <button>agregar</button>
+          </div>
+          <!-- -------          ------------- -->
+          <!-- -------          ------------- -->
+          <div class="card">
+            <h6 class="dto">32% dto</h6>
+            <img src="img/colgate.png" alt="" />
+            <div class="descripCard">
+              <p class="precio">$26.82/kg $39.9/kg</p>
+              <p class="descripcion">Limon con semilla</p>
+            </div>
+            <button>agregar</button>
+          </div>
+          <!-- -------          ------------- -->
+          <!-- -------          ------------- -->
+          <div class="card">
+            <h6 class="dto">32% dto</h6>
+            <img src="img/huevos.png" alt="" />
+            <div class="descripCard">
+              <p class="precio">$26.82/kg $39.9/kg</p>
+              <p class="descripcion">Limon con semilla</p>
+            </div>
+            <button>agregar</button>
+          </div>
+          <!-- -------          ------------- -->
+        </div>
+      </section>
+
+      <!-- -------  FIN LOS  MAS POPULARES------------- -->
+      <!-- -------             ------------- -->
     </main>
     <!-- ------- fIN MAIN------------- -->
 
+    <div id="myModal" class="modalContainer">
+      <div class="modal-content">
+        <img class="close" src="img/cancel.png" alt="" />
+
+        <div class="contentUbicacion">
+          <div class="textModal">
+            <p class="tituloModal">
+              <strong>¿Dónde quieres recibir tu pedido?</strong>
+            </p>
+            <p class="pModal">
+              Para poder ofrecerte productos dentro de tu área, necesitamos tu
+              dirección
+            </p>
+            <div class="contentInput">
+              <input
+                class="inputLocation"
+                type="text"
+                placeholder="Ingresa tu Dirección"
+              />
+              <button class="btnLocation">Buscar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script/modal.js"></script>
     <script src="script/main.js"></script>
   </body>
 </html>

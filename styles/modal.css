@@ -1,0 +1,217 @@
+.modalContainer {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContainer .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  width: 703px;
+  height: 354px;
+  left: 331px;
+  top: 80px;
+}
+
+.modalContainer .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contentUbicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 623px;
+  height: 274px;
+  left: 40px;
+  top: 40px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 24px 0px;
+}
+
+.textModal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 623px;
+  height: 82px;
+  left: 0px;
+  top: 64px;
+}
+
+.tituloModal {
+  position: static;
+  width: 623px;
+  height: 42px;
+  left: 0px;
+  top: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin: 50px 0 0 0;
+  color: #332927;
+}
+
+.pModal {
+  position: static;
+  width: 623px;
+  height: 24px;
+  left: 0px;
+  top: 58px;
+  /* Body 1/Regular */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Cocoa Brown */
+  color: #332927;
+}
+
+.contentInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 623px;
+  height: 104px;
+  left: 0px;
+  top: 170px;
+}
+
+.inputLocation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 16px;
+  outline: none;
+  position: static;
+  width: 623px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  /* Boulder */
+  border: 1px solid #b8b4b4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  /* Inside auto layout */
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  margin: 8px 0px;
+}
+
+.btnLocation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px;
+  position: static;
+  width: 623px;
+  height: 40px;
+  left: 0px;
+  top: 8px;
+  /* Malachite */
+  background: #0ac763;
+  border-radius: 8px;
+  color: white;
+}
+
+.cerrar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 8px;
+  position: static;
+}
+/*# sourceMappingURL=modal.css.map */

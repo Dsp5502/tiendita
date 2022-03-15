@@ -33,10 +33,10 @@ if (document.getElementById('btnModal')) {
 
 // ----------------------------------------------------------------
 if (document.getElementById('btnModal1')) {
-  var modal1 = document.getElementById('myModal1');
-  var btn1 = document.getElementById('btnModal1');
-  var span1 = document.getElementsByClassName('close')[1];
-  var body = document.getElementsByTagName('body')[1];
+  let modal1 = document.getElementById('myModal1');
+  let btn1 = document.getElementById('btnModal1');
+  let span1 = document.getElementsByClassName('close')[1];
+  let body = document.getElementsByTagName('body')[1];
 
   btn1.onclick = function () {
     modal1.style.display = 'block';
@@ -56,7 +56,41 @@ if (document.getElementById('btnModal1')) {
 
   window.onclick = function (event) {
     if (event.target == modal) {
-      modal.style.display = 'none';
+      modal1.style.display = 'none';
+
+      body.style.position = 'inherit';
+      body.style.height = 'auto';
+      body.style.overflow = 'visible';
+    }
+  };
+}
+
+// --------------------------------------------------------------
+if (document.getElementById('btnModal2')) {
+  let modal2 = document.getElementById('myModal2');
+  let btn2 = document.getElementById('btnModal2');
+  let span2 = document.getElementsByClassName('close')[2];
+  let body = document.getElementsByTagName('body')[2];
+
+  btn2.onclick = function () {
+    modal2.style.display = 'block';
+
+    body.style.position = 'static';
+    body.style.height = '100%';
+    body.style.overflow = 'hidden';
+  };
+
+  span2.onclick = function () {
+    modal2.style.display = 'none';
+
+    body.style.position = 'inherit';
+    body.style.height = 'auto';
+    body.style.overflow = 'visible';
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal2.style.display = 'none';
 
       body.style.position = 'inherit';
       body.style.height = 'auto';

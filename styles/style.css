@@ -216,6 +216,337 @@
   position: static;
 }
 
+.modalContainer .modal-content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px;
+  position: absolute;
+  width: 1068px;
+  height: 1186px;
+  left: 149px;
+  top: 80px;
+  /* White */
+  background: #fefefe;
+  border-radius: 16px;
+}
+
+.modalContainer .modal-content1 .contProductSelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 988px;
+  height: 522px;
+  left: 40px;
+  top: 40px;
+}
+
+.productSelec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 988px;
+  height: 522px;
+  left: 40px;
+  top: 40px;
+}
+
+.productSelec .imgProdSelec {
+  position: static;
+  width: 522px;
+  height: 522px;
+  left: 0px;
+  top: 0px;
+  background: #fefefe;
+}
+
+.productSelec .infoproductSelect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0px;
+  position: static;
+  width: 442px;
+  height: 458px;
+  left: 546px;
+  top: 0px;
+}
+
+.productSelec .datosselec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 442px;
+  height: 182px;
+  left: 0px;
+  top: 90px;
+}
+
+.productSelec .datosselec h5 {
+  position: static;
+  width: 442px;
+  height: 42px;
+  left: 0px;
+  top: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #332927;
+  margin: 40px 0 10px;
+}
+
+.productSelec .datosselec span {
+  position: static;
+  width: 442px;
+  height: 36px;
+  left: 0px;
+  top: 58px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #332927;
+}
+
+.productSelec .datosselec p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 442px;
+  height: 72px;
+  left: 0px;
+  top: 110px;
+  margin: 10px 0 70px;
+}
+
+.productSelec .datosselec small {
+  position: static;
+  width: 442px;
+  height: 16px;
+  left: 0px;
+  top: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #332927;
+}
+
+.productSelec .datosselec .spanSelect {
+  position: static;
+  width: 442px;
+  height: 48px;
+  left: 0px;
+  top: 24px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #332927;
+}
+
+.productSelec .datosselec .selectPeso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 442px;
+  height: 136px;
+  left: 0px;
+  top: 450px;
+}
+
+.productSelec .datosselec .selectPeso h6 {
+  position: static;
+  width: 304px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #332927;
+  margin: 5px 0px;
+}
+
+.productSelec .datosselec .selectPeso select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 16px;
+  position: static;
+  width: 442px;
+  height: 48px;
+  left: 0px;
+  top: 32px;
+  border: 1px solid #b8b4b4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.productSelec .datosselec .selectPeso option {
+  position: static;
+  width: 378px;
+  height: 24px;
+  left: 16px;
+  top: 12px;
+  /* Body 2/Regular */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  /* Cocoa Brown */
+  color: #332927;
+}
+
+.productSelec .datosselec .pesoAgregar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 8px 0px 0px;
+  position: static;
+  width: 442px;
+  height: 48px;
+  left: 0px;
+  top: 88px;
+}
+
+.productSelec .datosselec .pesoAgregar .btn-peso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 24px;
+  position: static;
+  width: 167px;
+  height: 40px;
+  left: 0px;
+  top: 8px;
+  background: #fefefe;
+  -webkit-box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin: 0 40px 0 0;
+  border: none;
+}
+
+.productSelec .datosselec .pesoAgregar .btn-Agregar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px;
+  position: static;
+  width: 235px;
+  height: 40px;
+  left: 207px;
+  top: 8px;
+  color: white;
+  background: #0ac763;
+  border-radius: 8px;
+  border: none;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

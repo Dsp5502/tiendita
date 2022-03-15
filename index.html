@@ -58,7 +58,7 @@
               <p class="precio">$26.82/kg $39.9/kg</p>
               <p class="descripcion">Limon con semilla</p>
             </div>
-            <button>agregar</button>
+            <button id="btnModal1">agregar</button>
           </div>
           <!-- -------          ------------- -->
           <!-- -------          ------------- -->
@@ -121,7 +121,7 @@
               <p class="precio">$62.5</p>
               <p class="descripcion">Limon con semilla</p>
             </div>
-            <button>agregar</button>
+            <button id="btnModalProducto">agregar</button>
           </div>
           <!-- -------          ------------- -->
           <!-- -------          ------------- -->
@@ -175,6 +175,8 @@
       <!-- -------             ------------- -->
     </main>
     <!-- ------- fIN MAIN------------- -->
+    <!-- -------             ------------- -->
+    <!-- ------- MODAL LOCATION------------- -->
 
     <div id="myModal" class="modalContainer">
       <div class="modal-content">
@@ -201,6 +203,43 @@
         </div>
       </div>
     </div>
+    <!-- -------  FIN MODAL LOCATION------------- -->
+    <!-- ------- MODAL PRODUCTO------------- -->
+
+    <div id="myModal1" class="modalContainer">
+      <div class="modal-content1">
+        <div class="contProductSelect">
+          <div class="productSelec">
+            <img class="imgProdSelec" src="img/aguacate.png" alt="" />
+            <div class="infoproductSelect">
+              <img class="close" src="img/cancel.png" alt="" />
+              <div class="datosselec">
+                <h5>Aguacate Hass</h5>
+                <span>$69.9 /Kg</span>
+                <p>
+                  <small>Precios con IVA incluido</small>
+                  <span class="spanSelect">
+                    Peso aproximado por pieza, puede variar de acuerdo al peso
+                    real.
+                  </span>
+                </p>
+                <div class="selectPeso">
+                  <h6>Selecciona la madurez que deseas</h6>
+                  <select name="" id="">
+                    <option value="">Por elegir</option>
+                  </select>
+                </div>
+                <div class="pesoAgregar">
+                  <button class="btn-peso">- 250 +</button>
+                  <button class="btn-Agregar">Agregar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------  FIN MODAL LOCATION------------- -->
     <script src="script/modal.js"></script>
     <script src="script/main.js"></script>
   </body>

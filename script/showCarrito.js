@@ -1,13 +1,30 @@
 const showCarrito = async (arrProducts, card) => {
   card.innerHTML = '';
-  let productos = await arrProducts;
-  productos.forEach((product) => {
-    const { nombre } = product;
+
+  let productosCarrito = await arrProducts;
+  const carritoSinduplicados = [...new Set(productosCarrito)];
+
+  productosCarrito.forEach((producto) => {
+    const { nombre, precio, imagen } = producto;
     card.innerHTML += `
-    <div>hola estoy en el carrito</div>
-    <div>${nombre}</div>
-    `;
+    <div class="productListadoCarrito">
+              <img src=${imagen} alt="imagen" />
+              <div class="especifiProduct">
+                <span class="nombreselectprod">${nombre}</span>
+                <p class="precioselectprod"><strong>${precio}</strong></p>
+              </div>
+            </div>
+      `;
   });
 };
+
+// carritoSinduplicados.forEach((product) => {
+//   const { nombre, imagen } = product;
+//   card.innerHTML += `
+//   <div>${nombre}
+//   <img src=${imagen} alt="">
+//   </div>
+//   `;
+// });
 
 export default showCarrito;

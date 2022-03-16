@@ -548,27 +548,7 @@
   border: none;
 }
 
-.modalContainer .modal-content2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 0px;
-  position: absolute;
-  width: 562px;
-  height: 768px;
-  left: 804px;
-  top: 0px;
-  background-color: white;
-}
-
-.cont-carrito {
+.contDireccion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,12 +568,13 @@
   height: 72px;
   left: 0px;
   top: 0px;
+  /* White */
   background: #fefefe;
   -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
 }
 
-.cont-carrito .entrega {
+.contDireccion .direccion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -612,7 +593,7 @@
   top: 24px;
 }
 
-.cont-carrito span {
+.contDireccion .direccion span {
   position: static;
   width: 84px;
   height: 24px;
@@ -621,12 +602,11 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 24px;
-  color: #000000;
 }
 
-.cont-carrito p {
+.contDireccion .direccion p {
   position: static;
   width: 301px;
   height: 24px;
@@ -635,8 +615,94 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 24px;
+}
+
+.contDireccion .productosLista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 562px;
+  height: 623px;
+  left: 0px;
+  top: 72px;
+  overflow-y: scroll;
+}
+
+.productListadoCarrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 16px;
+  position: static;
+  width: 562px;
+  height: 112px;
+  left: 0px;
+  top: 0px;
+  background: #fefefe;
+  -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+}
+
+.productListadoCarrito img {
+  position: static;
+  width: 64px;
+  height: 64px;
+  left: 16px;
+  top: 24px;
+  /* White */
+  background: #fefefe;
+}
+
+.productListadoCarrito .nombreselectprod {
+  position: static;
+  width: 251px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  /* Body 2/Regular */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  /* Cocoa Brown */
+  color: #332927;
+}
+
+.productListadoCarrito .precioselectprod {
+  position: static;
+  width: 251px;
+  height: 24px;
+  left: 0px;
+  top: 32px;
+  /* Body 1/Bold */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  /* Cocoa Brown */
+  color: #332927;
 }
 
 html {

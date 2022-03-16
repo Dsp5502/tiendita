@@ -38,7 +38,11 @@
           data-mdb-toggle="modal"
           data-mdb-target="#modalCarrito"
         >
-          <img src="img/carrito.png" alt="carrito" /><i class="Ncarrito">5</i>
+          <img src="img/carrito.png" alt="carrito" /><i
+            class="Ncarrito"
+            id="numeroProductos"
+            >5</i
+          >
         </button>
       </div>
     </header>
@@ -169,29 +173,21 @@
 
     <div class="modal fade" id="modalCarrito" tabindex="-1">
       <div class="modal-dialog">
-        <div class="modal-content" id="productosCarrito">
-          <!-- <div class="modal-header">
-            <h6 class="modal-title" id="exampleModalLabel">
-              Entregar en: <strong>México City Marriot Reforma Hotel...</strong>
-            </h6>
-            <button
-              type="button"
-              class="btn-close"
-              data-mdb-dismiss="modal"
-              aria-label="Close"
-            ></button>
+        <div class="modal-content">
+          <div class="contDireccion">
+            <div class="direccion">
+              <span>Entregar en:</span>
+              <p>Mexico City Reforma</p>
+            </div>
           </div>
-          <div id="productosCarrito">
-            pepsi
-            <span>hola</span>
-          </div> -->
-          <div>
-            <button
-              type="button"
-              class="btn-close"
-              data-mdb-dismiss="modal"
-              aria-label="Close"
-            ></button>
+          <div id="productosCarrito" class="productosLista">
+            <div class="productListadoCarrito">
+              <img src="img/aguacate.png" alt="imagen" />
+              <div class="especifiProduct">
+                <span class="nombreselectprod">Aguacate Hass</span>
+                <p class="precioselectprod"><strong>$17.48</strong></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

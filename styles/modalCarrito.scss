@@ -1,32 +1,22 @@
-.modalContainer .modal-content2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-
-  position: absolute;
-  width: 562px;
-  height: 768px;
-  left: 804px;
-  top: 0px;
-  background-color: white;
-}
-
-.cont-carrito {
+.contDireccion {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
+
   position: static;
   width: 562px;
   height: 72px;
   left: 0px;
   top: 0px;
+
+  /* White */
+
   background: #fefefe;
   box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
 
-  .entrega {
+  .direccion {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -37,33 +27,112 @@
     height: 24px;
     left: 16px;
     top: 24px;
+    span {
+      position: static;
+      width: 84px;
+      height: 24px;
+      left: 0px;
+      top: 0px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 24px;
+    }
+    p {
+      position: static;
+      width: 301px;
+      height: 24px;
+      left: 92px;
+      top: 0px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
-  span {
+  .productosLista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
     position: static;
-    width: 84px;
+    width: 562px;
+    height: 623px;
+    left: 0px;
+    top: 72px;
+    overflow-y: scroll;
+  }
+}
+
+.productListadoCarrito {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px 16px;
+
+  position: static;
+  width: 562px;
+  height: 112px;
+  left: 0px;
+  top: 0px;
+
+  background: #fefefe;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+
+  img {
+    position: static;
+    width: 64px;
+    height: 64px;
+    left: 16px;
+    top: 24px;
+
+    /* White */
+
+    background: #fefefe;
+  }
+
+  .nombreselectprod {
+    position: static;
+    width: 251px;
     height: 24px;
     left: 0px;
     top: 0px;
+
+    /* Body 2/Regular */
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 24px;
-    color: #000000;
-  }
+    /* identical to box height, or 171% */
 
-  p {
+    /* Cocoa Brown */
+
+    color: #332927;
+  }
+  .precioselectprod {
     position: static;
-    width: 301px;
+    width: 251px;
     height: 24px;
-    left: 92px;
-    top: 0px;
+    left: 0px;
+    top: 32px;
+
+    /* Body 1/Bold */
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 24px;
+    /* identical to box height, or 150% */
+
+    /* Cocoa Brown */
+
+    color: #332927;
   }
 }

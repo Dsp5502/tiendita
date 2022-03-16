@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .modalContainer {
+  display: none;
   position: fixed;
   z-index: 1;
   padding-top: 100px;
@@ -1080,5 +1081,57 @@ header .container-ubicacion button .Ncarrito {
     left: 0px;
     top: 0px;
   }
+}
+
+.modal-dialog {
+  padding: 0;
+  margin: 0;
+}
+
+.modal-dialog .modal-content {
+  /* Auto layout */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px;
+  position: absolute;
+  width: 1068px;
+  height: 1186px;
+  left: 149px;
+  top: 80px;
+  /* White */
+  background: #fefefe;
+  border-radius: 16px;
+}
+
+#modalCarrito .modal-dialog {
+  padding: 0;
+  margin: 0;
+}
+
+#modalCarrito .modal-dialog .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  width: 562px;
+  height: 768px;
+  left: 804px;
+  top: 0px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -15,6 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
@@ -28,7 +33,11 @@
         </div>
         <div class="linea"></div>
 
-        <button id="btnModal2">
+        <button
+          id="btnModal2"
+          data-mdb-toggle="modal"
+          data-mdb-target="#modalCarrito"
+        >
           <img src="img/carrito.png" alt="carrito" /><i class="Ncarrito">5</i>
         </button>
       </div>
@@ -49,61 +58,9 @@
       <!-- ------- OFERTAS------------- -->
       <section class="container-Ofertas">
         <h5>Ofertas</h5>
-        <div class="productsOfer">
+        <div id="ContentCards" class="productsOfer">
           <!-- -------          ------------- -->
-          <div class="card">
-            <h6 class="dto">32% dto</h6>
-            <img src="img/limon.png" alt="" />
-            <div class="descripCard">
-              <p class="precio">$26.82/kg $39.9/kg</p>
-              <p class="descripcion">Limon con semilla</p>
-            </div>
-            <button id="btnModal1">agregar</button>
-          </div>
-          <!-- -------          ------------- -->
-          <!-- -------          ------------- -->
-          <div class="card">
-            <h6 class="dto">32% dto</h6>
-            <img src="img/Tomate.png" alt="" />
-            <div class="descripCard">
-              <p class="precio">$26.82/kg $39.9/kg</p>
-              <p class="descripcion">Limon con semilla</p>
-            </div>
-            <button>agregar</button>
-          </div>
-          <!-- -------          ------------- -->
-          <!-- -------          ------------- -->
-          <div class="card">
-            <h6 class="dto">32% dto</h6>
-            <img src="img/aguacate.png" alt="" />
-            <div class="descripCard">
-              <p class="precio">$26.82/kg $39.9/kg</p>
-              <p class="descripcion">Limon con semilla</p>
-            </div>
-            <button>agregar</button>
-          </div>
-          <!-- -------          ------------- -->
-          <!-- -------          ------------- -->
-          <div class="card">
-            <h6 class="dto">32% dto</h6>
-            <img src="img/napal.png" alt="" />
-            <div class="descripCard">
-              <p class="precio">$26.82/kg $39.9/kg</p>
-              <p class="descripcion">Limon con semilla</p>
-            </div>
-            <button>agregar</button>
-          </div>
-          <!-- -------          ------------- -->
-          <!-- -------          ------------- -->
-          <div class="card">
-            <h6 class="dto">32% dto</h6>
-            <img src="img/tomateVerde.png" alt="" />
-            <div class="descripCard">
-              <p class="precio">$26.82/kg $39.9/kg</p>
-              <p class="descripcion">Limon con semilla</p>
-            </div>
-            <button>agregar</button>
-          </div>
+
           <!-- -------          ------------- -->
         </div>
       </section>
@@ -206,56 +163,82 @@
     <!-- -------  FIN MODAL LOCATION------------- -->
     <!-- ------- MODAL PRODUCTO------------- -->
 
-    <div id="myModal1" class="modalContainer">
-      <div class="modal-content1">
-        <div class="contProductSelect">
-          <div class="productSelec">
-            <img class="imgProdSelec" src="img/aguacate.png" alt="" />
-            <div class="infoproductSelect">
-              <img class="close" src="img/cancel.png" alt="" />
-              <div class="datosselec">
-                <h5>Aguacate Hass</h5>
-                <span>$69.9 /Kg</span>
-                <p>
-                  <small>Precios con IVA incluido</small>
-                  <span class="spanSelect">
-                    Peso aproximado por pieza, puede variar de acuerdo al peso
-                    real.
-                  </span>
-                </p>
-                <div class="selectPeso">
-                  <h6>Selecciona la madurez que deseas</h6>
-                  <select name="" id="">
-                    <option value="">Por elegir</option>
-                  </select>
-                </div>
-                <div class="pesoAgregar">
-                  <button class="btn-peso">- 250 +</button>
-                  <button class="btn-Agregar">Agregar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- -------  FIN MODAL LOCATION------------- -->
     <!-- -------              ------------- -->
     <!-- -------   MODAL CANASTA------------- -->
-    <div id="myModal2" class="modalContainer">
-      <div class="modal-content2">
-        <div class="cont-carrito border">
-          <div class="entrega">
-            <span>Entregar en: </span>
-            <p>Mexico City Marriott Reforma Hotel...</p>
-            <img class="close" src="img/cancel.png" alt="" />
+
+    <div class="modal fade" id="modalCarrito" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content" id="productosCarrito">
+          <!-- <div class="modal-header">
+            <h6 class="modal-title" id="exampleModalLabel">
+              Entregar en: <strong>México City Marriot Reforma Hotel...</strong>
+            </h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="productosCarrito">
+            pepsi
+            <span>hola</span>
+          </div> -->
+          <div>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
         </div>
       </div>
     </div>
+
     <!-- -------   FIN MODAL CANASTA------------- -->
 
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div id="modal-content" class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-mdb-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MDB -->
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
+    ></script>
     <script src="script/modal.js"></script>
-    <script src="script/main.js"></script>
+    <script src="script/main.js" type="module"></script>
   </body>
 </html>

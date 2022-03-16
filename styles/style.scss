@@ -400,3 +400,44 @@ header {
     top: 0px;
   }
 }
+
+.modal-dialog {
+  padding: 0;
+  margin: 0;
+  .modal-content {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+
+    position: absolute;
+    width: 1068px;
+    height: 1186px;
+    left: 149px;
+    top: 80px;
+
+    /* White */
+
+    background: #fefefe;
+    border-radius: 16px;
+  }
+}
+
+#modalCarrito .modal-dialog {
+  padding: 0;
+  margin: 0;
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 562px;
+    height: 768px;
+    left: 804px;
+    top: 0px;
+  }
+}

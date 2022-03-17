@@ -94,6 +94,7 @@ const sumar = () => {
     console.log(suma);
   });
   document.getElementById('total').innerHTML = `$${suma}`;
+  document.getElementById('totalFinal').innerHTML = `$${suma}`;
 };
 
 const pagarya = document.getElementById('pagarya');
@@ -114,8 +115,8 @@ pagarya.addEventListener('click', () => {
                     <p class="precio-rigth">${precio}</p>
                   </div>
                 </div>
-                <div ${id} class="btonAgregar">
-                  <span class="less">-</span>
+                <div  class="btonAgregar">
+                  <span id=${id} class="less">-</span>
                   <span class="textAgregar">250</span>
                   <span class="plus">+</span>
                 </div>
@@ -125,4 +126,18 @@ pagarya.addEventListener('click', () => {
   });
 });
 
-console.log({ carrito });
+const btnEliminar = document.getElementById('productosPagar');
+
+btnEliminar.addEventListener('click', (e) => {
+  const id = e.target.id;
+  let carritoeli = JSON.parse(localStorage.getItem('productos'));
+  const buscar = carritoeli.find((data) => data.id === id);
+
+  carritoeli.forEach((element, index) => {
+    if (element.id === buscar.id) {
+      carritoeli.splice(index, 1);
+      localStorage.setItem('productos', JSON.stringify(carritoeli));
+      getLocalStorage();
+    }
+  });
+});

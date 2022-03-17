@@ -80,50 +80,7 @@
             </div>
             <button id="btnModalProducto">agregar</button>
           </div>
-          <!-- -------          ------------- -->
-          <!-- -------          ------------- -->
-          <div class="card">
-            <h6 class="dto">32% dto</h6>
-            <img src="img/panBimbo.png" alt="" />
-            <div class="descripCard">
-              <p class="precio">$26.82/kg $39.9/kg</p>
-              <p class="descripcion">San Rafael pechuga de pavo</p>
-            </div>
-            <button>agregar</button>
-          </div>
-          <!-- -------          ------------- -->
-          <!-- -------          ------------- -->
-          <div class="card">
-            <h6 class="dto">32% dto</h6>
-            <img src="img/mayonesa.png" alt="" />
-            <div class="descripCard">
-              <p class="precio">$26.82/kg $39.9/kg</p>
-              <p class="descripcion">Limon con semilla</p>
-            </div>
-            <button>agregar</button>
-          </div>
-          <!-- -------          ------------- -->
-          <!-- -------          ------------- -->
-          <div class="card">
-            <h6 class="dto">32% dto</h6>
-            <img src="img/colgate.png" alt="" />
-            <div class="descripCard">
-              <p class="precio">$26.82/kg $39.9/kg</p>
-              <p class="descripcion">Limon con semilla</p>
-            </div>
-            <button>agregar</button>
-          </div>
-          <!-- -------          ------------- -->
-          <!-- -------          ------------- -->
-          <div class="card">
-            <h6 class="dto">32% dto</h6>
-            <img src="img/huevos.png" alt="" />
-            <div class="descripCard">
-              <p class="precio">$26.82/kg $39.9/kg</p>
-              <p class="descripcion">Limon con semilla</p>
-            </div>
-            <button>agregar</button>
-          </div>
+
           <!-- -------          ------------- -->
         </div>
       </section>
@@ -188,6 +145,7 @@
                     class="inputNumerosCard"
                     type="text"
                     placeholder="DD/MM/YY     CVC"
+                    required
                   />
                 </div>
                 <div class="nombreTarjeta">
@@ -195,7 +153,9 @@
                   <input class="inputNumerosCard" type="text" placeholder="" />
                 </div>
               </div>
-              <button class="btnPagoFinal">Pagar $0</button>
+              <button class="btnPagoFinal">
+                Pagar <i id="totalFinal">$0</i>
+              </button>
             </div>
           </div>
         </div>

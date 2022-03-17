@@ -333,6 +333,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0px;
+  outline: none;
   position: absolute;
   left: 0%;
   right: 0%;
@@ -377,7 +378,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 9px 12px;
-  width: 100%;
+  outline: none;
   position: static;
   height: 40px;
   left: 0px;
@@ -447,7 +448,7 @@
           align-items: center;
   padding: 12px 48px;
   position: static;
-  width: 413px;
+  width: 334px;
   height: 48px;
   left: 0px;
   top: 349px;

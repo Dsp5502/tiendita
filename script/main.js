@@ -124,8 +124,8 @@ pagarya.addEventListener('click', () => {
                 </div>
                 <div  class="btonAgregar">
                   <span id=${id} class="less">-</span>
-                  <span class="textAgregar">250</span>
-                  <span class="plus">+</span>
+                  <span   class="textAgregar">250</span>
+                  <span id=${id} class="plus">+</span>
                 </div>
               </div>
 

@@ -1957,7 +1957,8 @@ header .container-ubicacion button .Ncarrito {
 }
 
 #vaciarCanasta,
-.less {
+.less,
+.plus {
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

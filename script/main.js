@@ -2,13 +2,13 @@ import getData from './getData.js';
 import showData from './showdata.js';
 import './modal.js';
 import modalProductos from './modalProducto.js';
-// import showCarrito from './showCarrito.js';
 
 let carrito = [];
 
 const urlProductos = 'https://api-prueba-productos.herokuapp.com/productos';
 
 const cardsProductsOfer = document.getElementById('ContentCards');
+const contentOferCards = document.getElementById('contentOferCards');
 
 const numeroCarrito = document.getElementById('numeroCarrito');
 const numeroProductos = document.getElementById('numeroProductos');
@@ -22,6 +22,7 @@ const productosCarrito = document.getElementById('productosCarrito');
 document.addEventListener('DOMContentLoaded', async () => {
   const datosProd = await getData(urlProductos);
   showData(datosProd, cardsProductsOfer);
+  showData(datosProd, contentOferCards);
   getLocalStorage();
   sumar();
 });

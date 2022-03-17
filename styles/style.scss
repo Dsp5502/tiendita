@@ -273,6 +273,19 @@ header {
     top: 102px;
     overflow-x: scroll;
   }
+  .productsOfer2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: static;
+    width: 1162px;
+    height: 418px;
+    left: 40px;
+    top: 102px;
+    overflow-x: scroll;
+  }
 
   .card {
     display: flex;

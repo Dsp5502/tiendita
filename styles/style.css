@@ -1546,6 +1546,26 @@ header .container-ubicacion button .Ncarrito {
   overflow-x: scroll;
 }
 
+.container-Ofertas .productsOfer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 1162px;
+  height: 418px;
+  left: 40px;
+  top: 102px;
+  overflow-x: scroll;
+}
+
 .container-Ofertas .card {
   display: -webkit-box;
   display: -ms-flexbox;

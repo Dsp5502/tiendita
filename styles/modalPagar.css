@@ -294,6 +294,7 @@
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 9px 12px;
+  outline: none;
   position: static;
   height: 40px;
   left: 0px;
@@ -436,10 +437,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -463,5 +464,9 @@
   font-size: 16px;
   line-height: 24px;
   color: #fefefe;
+}
+
+.btnPagoFinal i {
+  margin: 0 15px;
 }
 /*# sourceMappingURL=modalPagar.css.map */

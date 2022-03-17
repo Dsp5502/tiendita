@@ -136,3 +136,61 @@
     color: #332927;
   }
 }
+
+.footerCarritos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  position: static;
+  width: 480px;
+  height: 72px;
+  left: 0px;
+  top: 695px;
+
+  /* White */
+
+  background: #fefefe;
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.05);
+  div {
+    position: static;
+    width: 108px;
+    height: 24px;
+    left: 16px;
+    top: 24px;
+
+    /* Body 2/Regular */
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    /* Boulder */
+
+    color: #b8b4b4;
+  }
+  button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+
+    position: static;
+    width: 239px;
+    height: 40px;
+    left: 307px;
+    top: 16px;
+
+    /* Malachite */
+
+    background: #0ac763;
+    border-radius: 8px;
+    color: white;
+  }
+}

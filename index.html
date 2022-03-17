@@ -41,7 +41,7 @@
           <img src="img/carrito.png" alt="carrito" /><i
             class="Ncarrito"
             id="numeroProductos"
-            >5</i
+            >0</i
           >
         </button>
       </div>
@@ -62,11 +62,7 @@
       <!-- ------- OFERTAS------------- -->
       <section class="container-Ofertas">
         <h5>Ofertas</h5>
-        <div id="ContentCards" class="productsOfer">
-          <!-- -------          ------------- -->
-
-          <!-- -------          ------------- -->
-        </div>
+        <div id="ContentCards" class="productsOfer"></div>
       </section>
       <!-- ------- FIN OFERTAS------------- -->
       <!-- -------             ------------- -->
@@ -165,9 +161,36 @@
       </div>
     </div>
     <!-- -------  FIN MODAL LOCATION------------- -->
-    <!-- ------- MODAL PRODUCTO------------- -->
+    <!-- ------- MODAL pagar------------- -->
 
-    <!-- -------  FIN MODAL LOCATION------------- -->
+    <!-- Modal -->
+    <div class="modal fade" id="pagar" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-mdb-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-mdb-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------  FIN MODAL Pagar------------- -->
     <!-- -------              ------------- -->
     <!-- -------   MODAL CANASTA------------- -->
 
@@ -182,12 +205,18 @@
           </div>
           <div id="productosCarrito" class="productosLista">
             <div class="productListadoCarrito">
-              <img src="img/aguacate.png" alt="imagen" />
-              <div class="especifiProduct">
-                <span class="nombreselectprod">Aguacate Hass</span>
-                <p class="precioselectprod"><strong>$17.48</strong></p>
+              <div class="sinProduct">
+                <img src="img/FamilyValuesShopping.png" alt="" />
+                <a href="index.html">Agregar Productos</a>
               </div>
             </div>
+          </div>
+          <div id="idFooterCart" class="modal-footer footerCarritos">
+            <div id="vaciarCanasta">Vaciar canasta</div>
+            <button data-mdb-toggle="modal" data-mdb-target="#pagar">
+              <i class="contador1" id="numeroCarrito">0</i> ir a pagar
+              <i id="total">$0</i>
+            </button>
           </div>
         </div>
       </div>

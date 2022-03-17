@@ -1,0 +1,65 @@
+#pagoHecho .modal-dialog {
+  padding: 0;
+  top: 0;
+  margin: 0;
+  left: 0;
+}
+
+#pagoHecho .modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+  position: absolute;
+  width: 631px;
+  height: 488.39px;
+  left: 368px;
+  top: 209px;
+  background: #fefefe;
+  border-radius: 16px;
+}
+
+.manos {
+  position: static;
+  width: 510px;
+  height: 284.39px;
+  left: 60.5px;
+  top: 40px;
+}
+
+.confimacion {
+  position: static;
+  width: 293px;
+  height: 36px;
+  left: 169px;
+  top: 348.39px;
+
+  /* Headline 2 */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+#terminado {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+
+  position: static;
+  width: 280px;
+  height: 40px;
+  left: 225.5px;
+  top: 408.39px;
+  color: white;
+
+  /* Malachite */
+
+  background: #0ac763;
+  border-radius: 8px;
+}

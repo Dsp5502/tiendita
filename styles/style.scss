@@ -2,6 +2,8 @@
 @import './modalProducto.scss';
 @import './modalCarrito.scss';
 @import './modalPagar.scss';
+@import './modalLocation.scss';
+@import './pagoHecho.scss';
 
 html {
   box-sizing: border-box;
@@ -495,6 +497,7 @@ header {
   border-radius: 8px;
 }
 
-#vaciarCanasta {
+#vaciarCanasta,
+.less {
   cursor: pointer;
 }

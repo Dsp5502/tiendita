@@ -23,7 +23,10 @@ const modalProductos = (producto, modal) => {
                 <div class="selectPeso">
                   <h6>Selecciona la madurez que deseas</h6>
                   <select name="" id="">
-                    <option value="">Por elegir</option>
+                    <option disabled value="1">Por elegir</option>
+                    <option  value="2">Maduro (Para hoy)</option>
+                    <option  value="3">Normal (3 - 5 dias)</option>
+                    <option  value="4">Normal (Verde (7 Dias))</option>
                   </select>
                 </div>
                 <div class="pesoAgregar">

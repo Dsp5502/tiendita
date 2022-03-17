@@ -28,7 +28,12 @@
       <div class="tienditatitle">Tiendita</div>
       <div class="container-ubicacion">
         <img class="iconlocation" src="img/Icons.png" alt="" />
-        <div class="location" id="btnModal">
+        <div
+          class="location"
+          id="btnModal"
+          data-mdb-toggle="modal"
+          data-mdb-target="#modalLocation"
+        >
           México City Marriot Reforma Hotel...
         </div>
         <div class="linea"></div>
@@ -71,15 +76,6 @@
         <h5>Los más populares</h5>
         <div id="contentOferCards" class="productsOfer2">
           <!-- -------          ------------- -->
-          <div class="card">
-            <h6 class="dto">32% dto</h6>
-            <img src="img/PechugaPavo.png" alt="" />
-            <div class="descripCard">
-              <p class="precio">$62.5</p>
-              <p class="descripcion">Limon con semilla</p>
-            </div>
-            <button id="btnModalProducto">agregar</button>
-          </div>
 
           <!-- -------          ------------- -->
         </div>
@@ -91,32 +87,54 @@
     <!-- ------- fIN MAIN------------- -->
     <!-- -------             ------------- -->
     <!-- ------- MODAL LOCATION------------- -->
-
-    <div id="myModal" class="modalContainer">
-      <div class="modal-content">
-        <img class="close" src="img/cancel.png" alt="" />
-
-        <div class="contentUbicacion">
-          <div class="textModal">
-            <p class="tituloModal">
-              <strong>¿Dónde quieres recibir tu pedido?</strong>
-            </p>
-            <p class="pModal">
-              Para poder ofrecerte productos dentro de tu área, necesitamos tu
-              dirección
-            </p>
-            <div class="contentInput">
-              <input
-                class="inputLocation"
-                type="text"
-                placeholder="Ingresa tu Dirección"
-              />
-              <button class="btnLocation">Buscar</button>
+    <div
+      class="modal fade"
+      id="modalLocation"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="botonclose">
+            <img
+              class="close-Tamaño"
+              data-mdb-dismiss="modal"
+              src="img/cancel.png"
+              alt=""
+            />
+          </div>
+          <div class="contentUbicacion">
+            <div class="textModal">
+              <p class="tituloModal">
+                <strong>¿Dónde quieres recibir tu pedido?</strong>
+              </p>
+              <p class="pModal">
+                Para poder ofrecerte productos dentro de tu área, necesitamos tu
+                dirección
+              </p>
+              <div class="contentInput">
+                <input
+                  id="inputlocation"
+                  class="inputLocation"
+                  type="text"
+                  placeholder="Ingresa tu Dirección"
+                />
+                <button
+                  id="buscarLocation"
+                  href="index.html"
+                  class="btnLocation"
+                >
+                  Buscar
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    
     <!-- -------  FIN MODAL LOCATION------------- -->
     <!-- ------- MODAL pagar------------- -->
 
@@ -153,7 +171,11 @@
                   <input class="inputNumerosCard" type="text" placeholder="" />
                 </div>
               </div>
-              <button class="btnPagoFinal">
+              <button
+                class="btnPagoFinal"
+                data-mdb-toggle="modal"
+                data-mdb-target="#pagoHecho"
+              >
                 Pagar <i id="totalFinal">$0</i>
               </button>
             </div>
@@ -171,7 +193,7 @@
           <div class="contDireccion">
             <div class="direccion">
               <span>Entregar en:</span>
-              <p>Mexico City Reforma</p>
+              <p id="dirEntrega">Mexico City Reforma</p>
             </div>
           </div>
           <div id="productosCarrito" class="productosLista">
@@ -232,13 +254,33 @@
         </div>
       </div>
     </div>
+    <!-- -------   Modal Pago Hecho------------- -->
+
+    <div
+      class="modal fade"
+      id="pagoHecho"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="img/HandsBuying.png" class="manos" alt="manos">
+          <p class="confimacion">¡Gracias por tu compra!</p>
+          <button id="terminado">Seguir Mostrando</button>
+      </div>
+    </div>
+    <!-- -------    fin Modal Pago Hecho------------- -->
+    <!-- -------                           ------------- -->
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- MDB -->
 
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
     ></script>
-    <script src="script/modal.js"></script>
+
     <script src="script/main.js" type="module"></script>
   </body>
 </html>

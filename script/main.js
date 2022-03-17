@@ -1,6 +1,5 @@
 import getData from './getData.js';
 import showData from './showdata.js';
-import './modal.js';
 import modalProductos from './modalProducto.js';
 
 let carrito = [];
@@ -42,7 +41,14 @@ btnProducto.addEventListener('click', async (e) => {
       numeroCarrito.innerText = `${carrito.length}`;
       carrito.push(productoSelec);
       localStorage.setItem('productos', JSON.stringify(carrito));
-      // showCarrito(carrito, productosCarrito);
+
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Producto Añadido',
+        showConfirmButton: false,
+        timer: 1500,
+      });
       getLocalStorage();
       sumar();
     });
@@ -54,7 +60,7 @@ vaciarCanasta.addEventListener('click', () => {
   carrito = [];
   numeroProductos.innerText = `${carrito.length}`;
   numeroCarrito.innerText = `${carrito.length}`;
-  // showCarrito(carrito, productosCarrito);
+
   getLocalStorage();
   sumar();
   localStorage.clear();
@@ -138,7 +144,32 @@ btnEliminar.addEventListener('click', (e) => {
     if (element.id === buscar.id) {
       carritoeli.splice(index, 1);
       localStorage.setItem('productos', JSON.stringify(carritoeli));
+
+      Swal.fire('Producto Eliminado', 'Sigue Comprando!!', 'succes');
       getLocalStorage();
     }
   });
+});
+
+const buscarLocation = document.getElementById('buscarLocation');
+
+buscarLocation.addEventListener('click', () => {
+  const inputlocation = document.getElementById('inputlocation').value;
+
+  console.log(inputlocation);
+  document.getElementById('btnModal').innerText = `${inputlocation}`;
+  document.getElementById('dirEntrega').innerText = `${inputlocation}`;
+
+  document.getElementById('inputlocation').value = '';
+  if (inputlocation === '') {
+    Swal.fire('Ingresa una Direccion Por favor!!');
+  } else {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Tu Direccion a sido agregada!!!',
+      showConfirmButton: false,
+      timer: 1500,
+    });
+  }
 });

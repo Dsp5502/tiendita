@@ -1512,8 +1512,9 @@ header .container-ubicacion button .Ncarrito {
 }
 
 .container-Ofertas h5 {
+  margin-bottom: 40px;
   position: static;
-  width: 76px;
+  width: 200px;
   height: 22px;
   left: 40px;
   top: 40px;
@@ -1566,7 +1567,7 @@ header .container-ubicacion button .Ncarrito {
   overflow-x: scroll;
 }
 
-.container-Ofertas .card {
+.container-Ofertas .cardx {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1578,7 +1579,7 @@ header .container-ubicacion button .Ncarrito {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 0px;
-  margin: 0 20px;
+  margin-left: 15px;
   position: static;
   width: 194px;
   height: 418px;
@@ -1586,7 +1587,7 @@ header .container-ubicacion button .Ncarrito {
   top: 0px;
 }
 
-.container-Ofertas .card .dto {
+.container-Ofertas .cardx .dto1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1599,7 +1600,7 @@ header .container-ubicacion button .Ncarrito {
           align-items: flex-start;
   padding: 4px;
   position: static;
-  width: 59px;
+  width: 80px;
   height: 24px;
   left: 0px;
   top: 0px;
@@ -1608,7 +1609,7 @@ header .container-ubicacion button .Ncarrito {
   border-radius: 16px;
 }
 
-.container-Ofertas .card img {
+.container-Ofertas .cardx img {
   position: static;
   width: 194px;
   height: 194px;
@@ -1618,7 +1619,7 @@ header .container-ubicacion button .Ncarrito {
   background: #fefefe;
 }
 
-.container-Ofertas .card .descripCard {
+.container-Ofertas .cardx .descripCard {
   position: static;
   width: 194px;
   height: 112px;
@@ -1626,7 +1627,7 @@ header .container-ubicacion button .Ncarrito {
   top: 250px;
 }
 
-.container-Ofertas .card .descripCard .precio {
+.container-Ofertas .cardx .descripCard .precio {
   position: static;
   width: 194px;
   height: 24px;
@@ -1643,7 +1644,7 @@ header .container-ubicacion button .Ncarrito {
   color: #332927;
 }
 
-.container-Ofertas .card .descripCard .descripcion {
+.container-Ofertas .cardx .descripCard .descripcion {
   position: static;
   width: 194px;
   height: 72px;
@@ -1660,7 +1661,7 @@ header .container-ubicacion button .Ncarrito {
   color: #332927;
 }
 
-.container-Ofertas .card button {
+.container-Ofertas .cardx button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

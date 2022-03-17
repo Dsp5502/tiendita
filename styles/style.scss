@@ -243,8 +243,9 @@ header {
   border-radius: 16px;
 
   h5 {
+    margin-bottom: 40px;
     position: static;
-    width: 76px;
+    width: 200px;
     height: 22px;
     left: 40px;
     top: 40px;
@@ -287,26 +288,26 @@ header {
     overflow-x: scroll;
   }
 
-  .card {
+  .cardx {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    margin: 0 20px;
+    margin-left: 15px;
     position: static;
     width: 194px;
     height: 418px;
     left: 0px;
     top: 0px;
 
-    .dto {
+    .dto1 {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
       padding: 4px;
 
       position: static;
-      width: 59px;
+      width: 80px;
       height: 24px;
       left: 0px;
       top: 0px;

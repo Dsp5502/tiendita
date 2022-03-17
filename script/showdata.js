@@ -4,8 +4,8 @@ const showData = async (arrProd, card) => {
   productos.forEach((producto) => {
     const { nombre, precio, imagen, id } = producto;
     card.innerHTML += `
-     <div class="card">
-            <h6 class="dto">32% dto</h6>
+     <div class="cardx">
+            <h6 class="dto1">32% dto</h6>
             <img src=${imagen} alt="" />
             <div class="descripCard">
               <p class="precio">${precio}/kg</p>

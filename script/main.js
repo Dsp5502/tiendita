@@ -63,9 +63,6 @@ vaciarCanasta.addEventListener('click', () => {
 const getLocalStorage = () => {
   let carrito1 = JSON.parse(localStorage.getItem('productos'));
   console.log(carrito1);
-  const prueba = document.getElementById('idFooterCart');
-  console.log(prueba);
-
   numeroProductos.innerText = `${carrito1.length}`;
   numeroCarrito.innerText = `${carrito1.length}`;
   productosCarrito.innerHTML = '';
@@ -98,5 +95,34 @@ const sumar = () => {
   });
   document.getElementById('total').innerHTML = `$${suma}`;
 };
+
+const pagarya = document.getElementById('pagarya');
+pagarya.addEventListener('click', () => {
+  let carrito1 = JSON.parse(localStorage.getItem('productos'));
+  const productosPagar = document.getElementById('productosPagar');
+  productosPagar.innerHTML = '';
+  carrito1.forEach((element) => {
+    const { nombre, precio, imagen, id } = element;
+    productosPagar.innerHTML += `
+    <div class="productpagarCont">
+                <div class="imgPagarProduct">
+                  <img src=${imagen} alt="" />
+                </div>
+                <div class="container-rigth">
+                  <div class="content-right">
+                    <p class="nombre-rigth">${nombre}</p>
+                    <p class="precio-rigth">${precio}</p>
+                  </div>
+                </div>
+                <div ${id} class="btonAgregar">
+                  <span class="less">-</span>
+                  <span class="textAgregar">250</span>
+                  <span class="plus">+</span>
+                </div>
+              </div>
+
+    `;
+  });
+});
 
 console.log({ carrito });

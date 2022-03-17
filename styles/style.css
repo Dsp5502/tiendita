@@ -788,6 +788,213 @@
   left: 0;
   width: 1366px !important;
   height: 829px !important;
+  position: relative;
+}
+
+.volver {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  position: absolute;
+  width: 92px;
+  height: 40px;
+  left: 40px;
+  top: 16px;
+}
+
+.volver img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 8px;
+  margin: 15px;
+  position: static;
+  left: 0px;
+  top: 0px;
+  /* Cocoa Brown */
+  border-radius: 80px;
+}
+
+.volver p {
+  position: static;
+  width: 44px;
+  height: 16px;
+  left: 48px;
+  top: 12px;
+  padding-right: 15px;
+  /* Button */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #332927;
+}
+
+.productosPagar {
+  border: solid 1px red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 16px;
+  position: absolute;
+  width: 631px;
+  height: 704px;
+  left: 40px;
+  top: 80px;
+  background: #ffffff;
+  /* Shadows-2 */
+  -webkit-box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.productosPagar .productpagarCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 16px;
+  position: static;
+  width: 562px;
+  height: 112px;
+  left: 16px;
+  top: 16px;
+  /* White */
+  background: #fefefe;
+  -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+}
+
+.productpagarCont .imgPagarProduct {
+  position: static;
+  width: 64px;
+  height: 64px;
+  left: 16px;
+  top: 24px;
+  margin: 0 30px 0 0;
+  /* White */
+  background: #fefefe;
+}
+
+.container-rigth {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0px;
+  position: static;
+  width: 251px;
+  height: 56px;
+  left: 104px;
+  top: 24px;
+}
+
+.container-rigth .content-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 251px;
+  height: 56px;
+  left: 0px;
+  top: 0px;
+}
+
+.container-rigth .content-right .nombre-rigth {
+  position: static;
+  width: 251px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #332927;
+}
+
+.container-rigth .content-right .precio-rigth {
+  position: static;
+  width: 251px;
+  height: 24px;
+  left: 0px;
+  top: 32px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #332927;
+}
+
+.btonAgregar {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 24px;
+  position: static;
+  width: 167px;
+  height: 40px;
+  left: 379px;
+  top: 24px;
+  background: #fefefe;
+  -webkit-box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
 }
 
 html {

@@ -167,25 +167,10 @@
     <div class="modal fade" id="pagar" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-mdb-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-mdb-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="volver">
+            <img src="img/volver.png" data-mdb-dismiss="modal" alt="" />
+            <span> Volver</span>
+            <div id="productosPagar" class="productosPagar"></div>
           </div>
         </div>
       </div>
@@ -213,7 +198,11 @@
           </div>
           <div id="idFooterCart" class="modal-footer footerCarritos">
             <div id="vaciarCanasta">Vaciar canasta</div>
-            <button data-mdb-toggle="modal" data-mdb-target="#pagar">
+            <button
+              id="pagarya"
+              data-mdb-toggle="modal"
+              data-mdb-target="#pagar"
+            >
               <i class="contador1" id="numeroCarrito">0</i> ir a pagar
               <i id="total">$0</i>
             </button>

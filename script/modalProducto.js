@@ -31,7 +31,7 @@ const modalProductos = (producto, modal) => {
                 </div>
                 <div class="pesoAgregar">
                   <button  class="btn-peso">- 250 +</button>
-                  <button id=${id} class="btn-Agregar addCart">Agregar</button>
+                  <button id=${id} class="btn-Agregar addCart" data-mdb-dismiss="modal">Agregar</button>
                 </div>
               </div>
             </div>

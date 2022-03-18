@@ -1924,8 +1924,8 @@ header .container-ubicacion button .Ncarrito {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px;
-  width: 250px;
+  padding: 30px;
+  width: 450px;
   height: 303px;
   left: 156px;
   top: 268px;
@@ -1960,5 +1960,36 @@ header .container-ubicacion button .Ncarrito {
 .less,
 .plus {
   cursor: pointer;
+}
+
+.btnCanastaVacia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 24px;
+  color: white;
+  position: static;
+  width: 281px;
+  height: 40px;
+  left: 34.5px;
+  top: 263px;
+  margin: 25px 0;
+  text-decoration: none;
+  background: #0ac763;
+  border-radius: 8px;
+}
+
+.btnCanastaVacia:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

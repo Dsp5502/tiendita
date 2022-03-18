@@ -15,7 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- MDB -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css"
       rel="stylesheet"
@@ -84,7 +83,7 @@
       <!-- -------  FIN LOS  MAS POPULARES------------- -->
       <!-- -------             ------------- -->
     </main>
-    <!-- ------- fIN MAIN------------- -->
+    <!-- ------- FIN MAIN------------- -->
     <!-- -------             ------------- -->
     <!-- ------- MODAL LOCATION------------- -->
     <div
@@ -124,6 +123,7 @@
                   id="buscarLocation"
                   href="index.html"
                   class="btnLocation"
+                  data-mdb-dismiss="modal"
                 >
                   Buscar
                 </button>
@@ -136,9 +136,9 @@
 
     
     <!-- -------  FIN MODAL LOCATION------------- -->
-    <!-- ------- MODAL pagar------------- -->
+    <!-- -------             ------------- -->
+    <!-- ------- MODAL PAGAR------------- -->
 
-    <!-- Modal -->
     <div class="modal fade" id="pagar" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -183,7 +183,7 @@
         </div>
       </div>
     </div>
-    <!-- -------  FIN MODAL Pagar------------- -->
+    <!-- -------  FIN MODAL PAGAR------------- -->
     <!-- -------              ------------- -->
     <!-- -------   MODAL CANASTA------------- -->
 
@@ -196,13 +196,11 @@
               <p id="dirEntrega">Mexico City Reforma</p>
             </div>
           </div>
-          <div id="productosCarrito" class="productosLista">
-            <div class="productListadoCarrito">
+          <div id="productosCarrito" class="productosLista">  
               <div class="sinProduct">
                 <img src="img/FamilyValuesShopping.png" alt="" />
-                <a href="index.html">Agregar Productos</a>
+                <a  class="btnCanastaVacia" data-mdb-dismiss="modal" >Agregar Productos</a>
               </div>
-            </div>
           </div>
           <div id="idFooterCart" class="modal-footer footerCarritos">
             <div id="vaciarCanasta">Vaciar canasta</div>
@@ -220,41 +218,24 @@
     </div>
 
     <!-- -------   FIN MODAL CANASTA------------- -->
-
-    <!-- Modal -->
+    <!-- -------                   ------------- -->
+    <!-- -------   MODAL PRODUCTO SELECCIONADO ------------- -->
+    
     <div
-      class="modal fade"
-      id="exampleModal"
+    class="modal fade"
+    id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
-    >
+      >
       <div class="modal-dialog">
-        <div id="modal-content" class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-mdb-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">...</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-mdb-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
+        <div id="modal-content" class="modal-content"></div>
       </div>
     </div>
-    <!-- -------   Modal Pago Hecho------------- -->
+
+    <!-- -------   MODAL PRODUCTO SELECCIONADO ------------- -->
+    <!-- -------                   ------------- -->
+    <!-- -------   MODAL PAGO HECHO------------- -->
 
     <div
       class="modal fade"
@@ -267,20 +248,17 @@
         <div class="modal-content">
           <img src="img/HandsBuying.png" class="manos" alt="manos">
           <p class="confimacion">¡Gracias por tu compra!</p>
-          <button id="terminado">Seguir Mostrando</button>
+          <button id="terminado" data-mdb-dismiss="modal">Seguir Mostrando</button>
       </div>
     </div>
-    <!-- -------    fin Modal Pago Hecho------------- -->
+    <!-- -------   FIN MODAL PAGO HECHO ------------- -->
     <!-- -------                           ------------- -->
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- MDB -->
-
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"
     ></script>
-
     <script src="script/main.js" type="module"></script>
   </body>
 </html>
